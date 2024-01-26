@@ -1,0 +1,281 @@
+@charset "utf-8";
+
+html {
+    font-size: 100%;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero.jpg);
+    background-size: cover;     /*画面いっぱいに収める */
+    background-position: center; 
+    font-size: 10px;
+}
+    
+a {
+    text-decoration: none;     /* 下線消える */
+}
+
+p {
+    font-size: 1.3rem;
+}
+
+img {
+    max-width: 60%;
+}
+
+li {
+    list-style: none;     /* 箇条書きの黒点消える */
+    font-size: 1.2rem;
+}
+
+/* header */
+#header {
+    max-width: 1500px;
+    height: 90px;
+    display: flex;        /* ナビゲーション横 */
+    align-items: center;  /* 縦方向に対して中心に寄せる */
+    justify-content: space-between;  
+    padding: 0 4%;        /* 内側の余白 上下、左右 */
+}
+
+#header a {
+    display: block;
+    height: 40px;
+    width: auto;
+}
+
+@media screen and (max-width: 768px) {
+    #header a {
+        width: 50%;
+    }
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+#header ul {
+    display: flex;
+    margin: 10px 0;
+    align-items: center;
+}
+
+#header ul li {
+    font-size: 0.8rem;
+    margin-left: 40px;   /* 文字の感覚を空ける */
+    font-weight: 900;    /* 文字の太さ */
+}
+
+#header ul li a {
+    color: black;
+    text-transform: uppercase;
+}
+
+#header ul li .mkr {
+    color: white;
+    padding: 2px 12px;
+    font-weight: 400;
+    display: flex;           /* 真ん中 */
+    flex-direction: column;  /* */
+    justify-content: center; /* */       
+}
+
+#header ul li a:hover {
+    opacity: 0.5;
+}
+
+#header a img:hover {
+    opacity: 0.5;
+}
+
+header nav ul li .mkr {
+    display: block;      /* ブロック要素に指定する、幅と高さの指定する事ができる */
+    background-color: #f79214;
+    padding: 1px 15px;   /* 内側の余白 */
+    border-radius: 30px; /* 外側の丸み */
+}
+
+
+#header nav ul li a {
+    text-align: center;  /* テキストを真ん中 */
+    display: block;     /* ブロック要素に変更して親要素の幅いっぱいに広げる */
+}
+
+span {
+    font-size: 10px;
+}
+
+
+/* main */
+main {
+    position: absolute;
+    top: 50;
+    left: 50;
+    transform: translate(20%,10%);
+    text-align: center;       /* 中央寄せ */
+    font-family: "Lato",sans-serif;
+    font-size: 18px;
+    /* background-color: #f79214; */
+    width:  600px;
+}
+
+main .button-area {
+    margin-top: 20px;
+    color: white;
+    display: block;
+    background-color: #f79214;
+    padding: 18px 20px;
+    border-radius: 30px;
+    font-size: 15px;
+}
+
+.button-area button {
+    color: white;
+    padding: 3px 60px;
+    font-weight: 550;
+}
+
+main .button-area:hover {
+    opacity: 0.5;
+}
+
+.video-container {
+    display: flex;
+    align-items: center; /* 垂直方向の中央揃え */
+    max-width: 800px; /* 動画とテキストの合計の最大幅 */
+    margin: 0 auto; /* 水平方向の中央揃え */
+    background-color: #f79214;
+}
+
+.fv {
+    padding-bottom: 40px; /* 余白 */
+    padding-top: 110px;
+}
+
+/* 動画要素 */
+.video {
+    max-width: 90%; /* 動画の最大幅 */
+}
+
+/* テキスト要素 */
+.text {
+    margin-left: 40px; /* テキストと動画の間のスペース */
+    width: 1000px;
+    height: 400px;
+    text-align: justify; 
+    padding-top: 60px;
+    background-color: #f79214;
+    color: white;
+    font-weight: 700;
+}
+
+.img2 {
+    width: 300px;
+    padding-top: 60px;
+}
+
+.text h2 {
+    font-weight: 900;
+}
+
+.tittle {
+    width: 600px;
+}
+
+
+.free {
+    width: 1000px;  /* あるいは希望の固定幅に調整 */
+    max-width: 100%;  /* 幅が親要素を超えないようにする */
+}
+   
+
+p  {
+    width: 1300px;
+    font-size: 15px;
+}
+
+.fv {
+     text-align: justify;  /* 文頭を揃える */ 
+     font-size: 12px;
+}
+
+/* バーガー */
+.burger {
+    width: 40px;
+    height: 40px;
+    background-image: url(img/burger.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 0 0 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    display: none;
+    /* display: block; */
+}
+
+.burger:hover {
+    background-color: #ddd;
+}
+
+@media screen and (max-width: 768px) {
+    #header ul li {
+        display: none; /* ナビ消える */
+    }
+
+    .burger {
+        display: block; /* バーガーアイコンを表示 */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .tittle {
+        width: 27.5%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .fv {
+        font-size: 12px;
+        line-height: 36px;
+        margin-left: calc(((100vw - 100%)/2)*-1);
+        margin-right: calc(((100vw - 100%)/2)*-1);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .button-area {
+    width: 100%;
+    display: flex;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 25px;
+        line-height: 36px;
+        margin-left: calc(((100vw - 100%)/2)*-1);
+        margin-right: calc(((100vw - 100%)/2)*-1);
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .img1 {
+        display: flex;
+        margin-right: 40%;
+
+        height: 220%;
+     
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+      background-size: cover; /* または他の適切なサイズに変更 */
+    }
+  }
