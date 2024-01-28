@@ -46,12 +46,6 @@ li {
     width: auto;
 }
 
-@media screen and (max-width: 768px) {
-    #header a {
-        width: 50%;
-    }
-}
-
 header nav {
     display: flex;
     align-items: center;
@@ -146,7 +140,7 @@ main .button-area:hover {
     display: flex;
     align-items: center; /* 垂直方向の中央揃え */
     max-width: 800px; /* 動画とテキストの合計の最大幅 */
-    margin: 0 auto; /* 水平方向の中央揃え */
+    margin: 0 auto; 
     background-color: #f79214;
 }
 
@@ -157,7 +151,7 @@ main .button-area:hover {
 
 /* 動画要素 */
 .video {
-    max-width: 90%; /* 動画の最大幅 */
+    max-width: 93%; /* 動画の最大幅 */
 }
 
 /* テキスト要素 */
@@ -221,21 +215,17 @@ p  {
     background-color: #ddd;
 }
 
+
+/* レスポンシブ */
 @media screen and (max-width: 768px) {
     #header ul li {
         display: none; /* ナビ消える */
     }
-
     .burger {
         display: block; /* バーガーアイコンを表示 */
     }
 }
 
-@media screen and (max-width: 768px) {
-    .tittle {
-        width: 27.5%;
-    }
-}
 
 @media screen and (max-width: 768px) {
     .fv {
@@ -243,14 +233,28 @@ p  {
         line-height: 36px;
         margin-left: calc(((100vw - 100%)/2)*-1);
         margin-right: calc(((100vw - 100%)/2)*-1);
+        width: 690px;
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .button-area .free {              /* 文字 */
+     display: flex;
+     /* width: 1600%; */
+     padding: 3px 150px; 
+     /* display: block;  */
     }
 }
 
 @media screen and (max-width: 768px) {
-    .button-area {
-    width: 100%;
-    display: flex;
-    }
+    main .button-area {                /* 背景 */
+        padding: 10px 20px; 
+        margin-top: 180px;
+        margin-bottom: 40px;
+        margin-right: 40px;
+     }
 }
 
 
@@ -260,6 +264,17 @@ p  {
         line-height: 36px;
         margin-left: calc(((100vw - 100%)/2)*-1);
         margin-right: calc(((100vw - 100%)/2)*-1);
+        text-align: right; /* テキストを右寄せに設定 */
+     }
+}
+
+@media screen and (max-width: 768px) {
+    .mikeiken { 
+        font-size: 25px;
+        line-height: 36px;
+        margin-left: calc(((100vw - 100%)/2)*-1);
+        margin-right: calc(((100vw - 100%)/2)*-1);
+        text-align: right; /* テキストを右寄せに設定 */
     }
 }
 
@@ -268,14 +283,59 @@ p  {
     .img1 {
         display: flex;
         margin-right: 40%;
-
         height: 220%;
-     
+        float: right; /* 画像を右に寄せる */
+        margin-right: 0 ;
+        margin-right: 110px; 
     }
 }
 
-@media (max-width: 768px) {
-    body {
-      background-size: cover; /* または他の適切なサイズに変更 */
+ @media screen and (max-width: 768px) { 
+     body { 
+      background-size: cover; 
     }
-  }
+ }
+
+ @media screen and (max-width: 768px) {
+    #header a {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .saitan {
+        padding-top: 30%;
+        padding-right: 280px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .mikeiken {
+        padding-right: 200px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .video {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .video-container {
+        display: flex; /* Flexboxを使用するために親要素にdisplay: flex;を指定 */
+      flex-direction: column; 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .text {
+        padding-left: 30%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .img2 {
+        padding-left: 10%;
+    }
+}
