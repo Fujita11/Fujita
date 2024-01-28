@@ -46,12 +46,6 @@ li {
     width: auto;
 }
 
-@media screen and (max-width: 768px) {
-    #header a {
-        width: 50%;
-    }
-}
-
 header nav {
     display: flex;
     align-items: center;
@@ -221,21 +215,17 @@ p  {
     background-color: #ddd;
 }
 
+
+/* レスポンシブ */
 @media screen and (max-width: 768px) {
     #header ul li {
         display: none; /* ナビ消える */
     }
-
     .burger {
         display: block; /* バーガーアイコンを表示 */
     }
 }
 
-@media screen and (max-width: 768px) {
-    .tittle {
-        width: 27.5%;
-    }
-}
 
 @media screen and (max-width: 768px) {
     .fv {
@@ -243,14 +233,28 @@ p  {
         line-height: 36px;
         margin-left: calc(((100vw - 100%)/2)*-1);
         margin-right: calc(((100vw - 100%)/2)*-1);
+        width: 690px;
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .button-area .free {              /* 文字 */
+     display: flex;
+     width: 1600%;
+     padding: 3px 150px; 
+     /* display: block;  */
     }
 }
 
 @media screen and (max-width: 768px) {
-    .button-area {
-    width: 100%;
-    display: flex;
-    }
+    main .button-area {                /* 背景 */
+        padding: 10px 20px; 
+        margin-top: 180px;
+        margin-bottom: 40px;
+        margin-right: 10px;
+     }
 }
 
 
@@ -260,6 +264,17 @@ p  {
         line-height: 36px;
         margin-left: calc(((100vw - 100%)/2)*-1);
         margin-right: calc(((100vw - 100%)/2)*-1);
+        text-align: right; /* テキストを右寄せに設定 */
+     }
+}
+
+@media screen and (max-width: 768px) {
+    .mikeiken { 
+        font-size: 25px;
+        line-height: 36px;
+        margin-left: calc(((100vw - 100%)/2)*-1);
+        margin-right: calc(((100vw - 100%)/2)*-1);
+        text-align: right; /* テキストを右寄せに設定 */
     }
 }
 
@@ -268,14 +283,41 @@ p  {
     .img1 {
         display: flex;
         margin-right: 40%;
-
         height: 220%;
-     
+        float: right; /* 画像を右に寄せる */
+        margin-right: 0 ;
+        margin-right: 110px; 
     }
 }
 
-@media (max-width: 768px) {
-    body {
-      background-size: cover; /* または他の適切なサイズに変更 */
+ @media screen and (max-width: 768px) { 
+     body { 
+      background-size: cover; /* または他の適切なサイズに変更*/
     }
-  }
+ }
+
+ @media screen and (max-width: 768px) {
+    #header a {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .saitan {
+        padding-right: 300px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .mikeiken {
+        padding-right: 210px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .video {
+        width: 100%;
+    }
+}
+
+
