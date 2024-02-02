@@ -349,6 +349,7 @@ p  {
         /* width: 300px; 任意の大きさに設定 */
         height: 200px;
     }
+    
     body {
         /* スマートフォン用の背景画像 */
         background-image: url('https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero-sp.jpg');
