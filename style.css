@@ -43,8 +43,13 @@ li {
 
 #header a {
     display: block;
+<<<<<<< HEAD
     height: 25%;
     max-width: auto;
+=======
+    height: 40px;
+    width: auto;
+>>>>>>> f789472819adecbe61ff8019bb5dc5fe49c8b0b0
 }
 
 header nav {
@@ -257,6 +262,10 @@ p  {
     background-color: #ddd;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> f789472819adecbe61ff8019bb5dc5fe49c8b0b0
 /* レスポンシブ */
 @media screen and (max-width: 768px) {
     #header ul li {
@@ -267,6 +276,7 @@ p  {
         display: block; /* バーガーアイコンを表示 */
         /* position: absolute; */
     }
+<<<<<<< HEAD
     .fv {
         font-size: 12px;
         line-height: auto;
@@ -289,6 +299,43 @@ p  {
         transform: translate(5%,5%);
         width: 90%;
     }
+=======
+}
+
+
+@media screen and (max-width: 768px) {
+    .fv {
+        font-size: 12px;
+        line-height: 36px;
+        margin-left: calc(((100vw - 100%)/2)*-1);
+        margin-right: calc(((100vw - 100%)/2)*-1);
+        width: 690px;
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .button-area .free {              /* 文字 */
+     display: flex;
+     width: 1600%;
+     padding: 3px 150px; 
+     /* display: block;  */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    main .button-area {                /* 背景 */
+        padding: 10px 20px; 
+        margin-top: 180px;
+        margin-bottom: 40px;
+        margin-right: 10px;
+     }
+}
+
+
+@media screen and (max-width: 768px) {
+>>>>>>> f789472819adecbe61ff8019bb5dc5fe49c8b0b0
     h1 {
         font-size: 25px;
         line-height: 100%;
@@ -296,11 +343,29 @@ p  {
         margin-right: calc(((100vw - 100%)/2)*-1);
         text-align: right; /* テキストを右寄せに設定 */
      }
+<<<<<<< HEAD
+=======
+}
+
+@media screen and (max-width: 768px) {
+    .mikeiken { 
+        font-size: 25px;
+        line-height: 36px;
+        margin-left: calc(((100vw - 100%)/2)*-1);
+        margin-right: calc(((100vw - 100%)/2)*-1);
+        text-align: right; /* テキストを右寄せに設定 */
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+>>>>>>> f789472819adecbe61ff8019bb5dc5fe49c8b0b0
     .img1 {
         display: flex;
         margin-right: 40%;
         height: 220%;
         float: right; /* 画像を右に寄せる */
+<<<<<<< HEAD
         /* margin-right: 0 ; */
         margin-top: 30px;
     }
@@ -401,3 +466,41 @@ p  {
         background-color: #ddd;
     }
 }
+=======
+        margin-right: 0 ;
+        margin-right: 110px; 
+    }
+}
+
+ @media screen and (max-width: 768px) { 
+     body { 
+      background-size: cover; /* または他の適切なサイズに変更*/
+    }
+ }
+
+ @media screen and (max-width: 768px) {
+    #header a {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .saitan {
+        padding-right: 300px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .mikeiken {
+        padding-right: 210px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .video {
+        width: 100%;
+    }
+}
+
+
+>>>>>>> f789472819adecbe61ff8019bb5dc5fe49c8b0b0
