@@ -309,7 +309,7 @@ p  {
         line-height: 36px;
         /* margin-left: calc(((100vw - 100%)/2)*-1); */
         /* margin-right: calc(((100vw - 100%)/2)*-1); */
-        width: 97%;
+        width: 98%;
     }
     .button-area .free {              /* 文字 */
      /* display: flex; */
@@ -334,13 +334,13 @@ p  {
 
     .img1 {
         display: flex;
-        margin-right: 30%;
+        margin-right: 40%;
         height: 220%;
         float: right; /* 画像を右に寄せる */
         /* margin-right: 0 ; */
         margin-top: 30px;
         height: 130px;
-        width: 430px;
+        width: 480px;
     }
     #header a {
         width: 50%;
@@ -353,20 +353,20 @@ p  {
         /* margin-right: calc(((100vw - 100%)/2)*-1); */
         /* text-align: center; */
         /* margin: 0 auto; */
-        margin-top: -300px;
-        margin-right: 39%;
+        margin-top: -290px;
+        margin-right: 34%;
     }
     .mikeiken {
-        padding-right: 0px;
         font-size: 25px;
         line-height: 36px;
         /* margin-left: calc(((100vw - 100%)/2)*-1); */
         /* margin-right: calc(((100vw - 100%)/2)*-1); */
         /* text-align: right;  */
         margin-top: 10px;
-        text-align: center;
-        margin: 10 auto;;
-        margin-right: 20%;
+        /* text-align: center; */
+        /* margin: 10 auto;; */
+        margin-right: 10%;
+        /* margin: 0%; */
     }
     .video {
         width: 600px;
@@ -380,17 +380,21 @@ p  {
     }
     .img1 {
         max-width:100%;
-        transform: translate(30%,0%);
+        transform: translate(-10%,0%);
         /* padding-right: 70px; */
         margin-left: 60%;
+        width: 50%;
+        height: auto;
     }
     .img2 {
         padding-left: 40%;
+        padding-bottom: 10%;
         transform: scale(4); 
-        transform: translate(25%,10%);
+        transform: translate(25%,0%);
         /* width: 300px; 任意の大きさに設定 */
-        height: 200px;
-        margin-top: -30%;
+        height: 190px;
+        /* margin-top: -45%; */
+      
     }
     body {
         /* スマートフォン用の背景画像 */
@@ -424,7 +428,6 @@ p  {
         margin-top: -60%;
      }  
      .kei {
-        padding-left: 10%;
         font-size: 11px;
         margin-top: -30%;
         /* width: 800px; */
@@ -445,11 +448,8 @@ p  {
     .burger:hover {
         background-color: #ddd;
     }
-        /* margin-right: 0 ; */
-        /* margin-right: 110px;  */
-    /* } */
     .tittle {
-        width: 420px;
+        width: 375px;
     }
     .mobile-image {
         display: block; 
